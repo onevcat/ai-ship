@@ -8,6 +8,9 @@ devDependencies:
   '@11ty/eleventy':
     specifier: ^3.1.2
     version: 3.1.2
+  '@openai/codex-sdk':
+    specifier: ^0.46.0
+    version: 0.46.0
   autoprefixer:
     specifier: ^10.4.21
     version: 10.4.21(postcss@8.5.6)
@@ -313,6 +316,11 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
+    dev: true
+
+  /@openai/codex-sdk@0.46.0:
+    resolution: {integrity: sha512-xCjQnuV13rDqVf3EQa/2BD38qzelOofCFVKpexkO6LVnoYaZin/MTwzSNiAR7k8DTF7AHottgqwNOB8hbYVauA==}
+    engines: {node: '>=18'}
     dev: true
 
   /@pkgjs/parseargs@0.11.0:
