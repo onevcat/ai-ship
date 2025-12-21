@@ -54,6 +54,11 @@ module.exports = {
     title: 'ZenMux',
     svg: 'https://github.com/user-attachments/assets/6dd1a58b-5983-49ad-9105-fedca4efa319'
   },
+  mcp: {
+    symbolId: 'icon-mcp',
+    title: 'MCP',
+    svg: 'https://unpkg.com/@lobehub/icons-static-svg@latest/icons/mcp.svg'
+  },
   __default: {
     symbolId: 'icon-generic',
     title: 'AI Tool',
