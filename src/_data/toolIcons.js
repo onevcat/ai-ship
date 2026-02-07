@@ -59,6 +59,12 @@ module.exports = {
     title: 'MCP',
     svg: 'https://unpkg.com/@lobehub/icons-static-svg@latest/icons/mcp.svg'
   },
+  openclaw: {
+    symbolId: 'icon-openclaw',
+    title: 'OpenClaw',
+    // Local SVG (checked into repo). No download needed.
+    svg: null,
+  },
   __default: {
     symbolId: 'icon-generic',
     title: 'AI Tool',
