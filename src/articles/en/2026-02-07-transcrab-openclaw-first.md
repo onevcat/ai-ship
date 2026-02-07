@@ -12,7 +12,7 @@ Before this, whenever I built a project I always had a clear audience in mind: u
 
 Recently I built a small project: [TransCrab](https://transcrab.onev.cat). It’s the first time I’ve seriously switched the “first user” from a person to an agent—specifically, OpenClaw.
 
-What humans need to do is compressed to the bare minimum: tell OpenClaw there’s a project here, what result I want, and that I agree to let it install and run things. The rest—from setup, configuration, to getting the workflow truly running—can largely be handed off to it. Even wilder (and more fun): large parts of TransCrab itself are actually “written” by OpenClaw—I provide direction and judgment, and it turns the plan into reality.
+What humans need to do is compressed to the bare minimum: tell OpenClaw there’s a project here, what result I want, and that I agree to let it install and run things. The rest—from setup, configuration, to getting the workflow truly running—can largely be handed off to it. Even wilder (and more fun): TransCrab itself was “written” by OpenClaw from start to finish—with me sitting in a chat app, steering the direction and making the calls.
 
 This was a very new experience for me: for the first time I clearly felt I wasn’t building a “tool for people,” but a “capability for an agent.” It reads docs, runs scripts, makes decisions, maintains itself, and can even push an entire deployment through to production from a cold start—while I’m mostly watching, confirming, and correcting the direction.
 
