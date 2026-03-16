@@ -59,6 +59,12 @@ module.exports = {
     title: 'MCP',
     svg: 'https://unpkg.com/@lobehub/icons-static-svg@latest/icons/mcp.svg'
   },
+  jj: {
+    symbolId: 'icon-jj',
+    title: 'Jujutsu',
+    // Local icon built from jj-vcs GitHub avatar.
+    svg: null,
+  },
   openclaw: {
     symbolId: 'icon-openclaw',
     title: 'OpenClaw',
