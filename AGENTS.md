@@ -66,6 +66,20 @@
 - 短代码：分页导航（本地化文案）、语言切换、工具图标。
 - 输出：主页使用分页生成 `/index.html`, `/page/N/index.html`；额外生成 `feed.xml`, `feed.json`, `sitemap.xml`。
 
+## 发布与维护提示
+
+### 发布流程
+- 触发：`git push` 到 `master`。Netlify 监听默认分支，自动跑 `npm run build`，输出到 `public/`。没有手动 release 步骤，push 即发布。
+- 完整 build 链路：`clean → download:icons → build:icons → translate:articles → build:assets → eleventy:build`。
+
+### 新增 tool icon
+1. 在 `src/_data/toolIcons.js` 增加条目，填好 `symbolId` / `title` / `svg`（lobehub 等来源的远端 URL）。
+2. 本地跑 `npm run download:icons`，脚本会按 URL 拉取 svg 写入 `src/icons/raw/tools/<key>.svg`；对已存在的文件自动跳过，重复跑安全。
+3. 把下载到的 svg 一并 `git add` 进 repo。
+4. 不需要手动跑 `build:icons`，Netlify 端会自动重建 sprite。
+
+> 为什么要把 svg 提交进 repo：Netlify 默认会跑 `download:icons`，但 unpkg 偶尔抽风（404、重定向异常）会拖垮 CI。把 svg 凝固进 repo，CI 走 "skip exists" 路径，外部依赖故障不影响发布。
+
 ## 后续可关注
 - 根据 `Doc/backlog.md` 持续补充多语言内容、丰富 SVG 图标、增强性能（懒加载/预渲染）。
 - Tailwind 构建警告提示未检测到 utility class，可考虑移除未用的 Tailwind 依赖或引入需要的工具类。
