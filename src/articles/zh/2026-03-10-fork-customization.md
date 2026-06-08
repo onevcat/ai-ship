@@ -4,8 +4,8 @@ date: "2026-03-10"
 tools: ["openclaw", "codex"]
 category: "工作"
 action_button:
-  text: "查看我的 supacode fork"
-  url: "https://github.com/onevcat/supacode"
+  text: "查看我的 fork Prowl"
+  url: "https://github.com/onevcat/Prowl"
 ---
 
 AI 让软件开发的稀缺点变了：通用功能越来越容易获得，真正稀缺的是“贴合自己工作流的版本”。
@@ -14,6 +14,6 @@ AI 让软件开发的稀缺点变了：通用功能越来越容易获得，真�
 
 这也解释了为什么“贡献上游”不再是唯一答案。很多需求本来就偏私有：个人习惯、团队流程、交互偏好，甚至和原作者理念冲突。它们不适合做公共默认值，但非常适合留在自己的分支里持续迭代。
 
-我的 [supacode fork](https://github.com/onevcat/supacode) 就是这样：底子沿用原项目，只做高频体验改造，比如脚本按钮、快捷键、diff view。单点改动不大，但组合起来，工具会从“能用”变成“顺手”。
+我的 fork [Prowl](https://github.com/onevcat/Prowl) 就是这样：底子沿用原项目，只做高频体验改造，比如脚本按钮、快捷键、diff view。单点改动不大，但组合起来，工具会从“能用”变成“顺手”。
 
 我越来越相信，**开源底座 + AI 定制**会成为下一阶段非常主流的开发方式。软件的核心问题，正在从“做不做得出来”，转向“是否足够像你自己”。
