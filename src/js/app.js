@@ -6,7 +6,7 @@ const copyPrompt = async (button) => {
   let text = '';
   try {
     text = JSON.parse(payload);
-  } catch (error) {
+  } catch {
     text = payload;
   }
 
@@ -213,8 +213,6 @@ const applyTheme = (theme) => {
 const initControls = () => {
   // 初始化主题控制
   const storedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const currentTheme = storedTheme || (prefersDark ? 'dark' : 'light');
 
   // 更新主题菜单状态
   const themeMenu = document.querySelector('[data-menu="theme"]');
