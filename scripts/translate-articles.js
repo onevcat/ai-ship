@@ -18,7 +18,7 @@ const TAG = "[translate-articles]";
 
 // The Codex CLI may default to a model you don't have access to via ~/.codex/config.toml.
 // Pin a known-good default, and allow override via env.
-const CODEX_MODEL = process.env.CODEX_MODEL || "gpt-5.2-codex";
+const CODEX_MODEL = process.env.CODEX_MODEL || "gpt-5.5";
 
 async function main() {
   try {
