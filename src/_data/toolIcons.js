@@ -65,6 +65,12 @@ module.exports = {
     // Local icon built from jj-vcs GitHub avatar.
     svg: null,
   },
+  omp: {
+    symbolId: 'icon-omp',
+    title: 'Oh My Pi',
+    // Local SVG (checked into repo). No download needed.
+    svg: null,
+  },
   openclaw: {
     symbolId: 'icon-openclaw',
     title: 'OpenClaw',
